@@ -1,0 +1,219 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arimo", sans-serif;
+}
+.HeroSectionMain {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+.HeroSectionMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  z-index: -1;
+}
+.HeroSectionWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.323);
+}
+.HeroHeaderWrap {
+  width: 100%;
+  height: 20%;
+  margin-top: 30px;
+  display: flex;
+}
+.HeroHeaderMobileWrap{
+  display: none;
+}
+.HerobodyWrap {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.HerobodyWrap h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.HerobodyWrap h5::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 45px;
+  height: 2px;
+  top: 13px;
+  left: 250px;
+}
+
+.HerobodyWrap h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 30px;
+  font-family: "Arimo", sans-serif;
+}
+
+.HeroButtonWrap {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.HeroButton1 {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #364a63;
+  color: white;
+  font-family: "Arimo", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.HeroButton2Wrap {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+}
+
+.HeroButton2Wrap.animate__animated {
+  opacity: 1;
+}
+
+.HeroButton2USerIcon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.HeroSignupButton {
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes growImage {
+  0% {
+    height: 100%;
+    /* background-size: 100%; */
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  100% {
+    height: 100vh;
+    /* background-size: 110%; */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .HeroSectionMain {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .HeroSectionWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .HerobodyWrap {
+    height: 100%;
+  }
+  .HerobodyWrap h1 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .HeroButtonWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .HeroButton1 {
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+  }
+  .HerobodyWrap h5 {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 20px;
+    font-family: sans-serif;
+  }
+
+  .HerobodyWrap h5::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 45px;
+    height: 2px;
+    top: 13px;
+    left: 200px;
+  }
+  .HerobodyWrap {
+    width: 90%;
+    height: 70%;
+    padding: 10px;
+  }
+  .HeroHeaderWrap {
+    display: none;
+  }
+  .HeroHeaderMobileWrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}

@@ -1,0 +1,130 @@
+.AdminOverviewMain {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.AdminOverviewCardWrap {
+  width: 95%;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.AdminOverviewCard {
+  width: 250px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.AdminOverviewCardIconWrap {
+  width: 30%;
+  height: 80%;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.AdminOverviewCardTextWrap {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.AdminOverviewCardTextWrap p {
+  color: rgba(0, 0, 0, 0.554);
+}
+.AdminOverviewCardIcon {
+  font-size: 30px;
+  color: white;
+}
+.AdminOverviewChartWrap {
+  width: 95%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.AdminOverviewChart {
+  width: 65%;
+  /* height: 400px; */
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+.AdminOverviewChartWrap img {
+  width: 100%;
+  background-color: #e0f2fe;
+}
+.AdminOverviewAllUserWrap {
+  width: 30%;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 450px;
+}
+.AdminOverviewAll {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow-y: scroll;
+}
+.AdminOverviewOneUserWrap {
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.AdminOverviewUserName {
+  font-size: 15px;
+}
+.AdminOverviewUserEmail {
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .AdminOverviewChartWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .AdminOverviewChart {
+    width: 100%;
+    /* height: 200px; */
+  }
+  .AdminOverviewAllUserWrap {
+    width: 90%;
+  }
+  .AdminOverviewCard {
+    width: 90%;
+  }
+  .AdminOverviewCardWrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .AdminOverviewCardTextWrap p{
+    font-size: 16px;
+  }
+}

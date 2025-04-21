@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arimo", sans-serif;
+}
+.Hero2SectionMain {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+.Hero2SectionMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  z-index: -1;
+}
+.Hero2SectionWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.522);
+}
+.Hero2SectionMainBodyWrap {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: red; */
+  margin-top: 20px;
+}
+.Hero2SectionMainDesc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.Hero2SectionMainDesc p {
+  font-size: 25px;
+  color: white;
+}
+.Hero2SectionMainBodyWrap h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 30px;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+}
+.Hero2HeaderMobileWrap {
+  display: none;
+}
+.Hero2HeaderWrap {
+  width: 100%;
+  height: 20%;
+  margin-top: 30px;
+  display: flex;
+}
+.Hero2ButtonWrap {
+  width: 150px;
+  border: none;
+  height: 50px;
+  background-color: #364a63;
+  color: white;
+}
+.Hero2ButtonWrap.animate__animated {
+  opacity: 1;
+  animation-duration: 3s;
+}
+@keyframes growImage {
+  0% {
+    background-size: 100%; /* Start with the original size */
+    background-position: center;
+  }
+  100% {
+    background-size: 110%; /* Grow the image slightly */
+    background-position: center; /* Ensure the position remains centered */
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .Hero2HeaderMobileWrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .Hero2HeaderWrap {
+    display: none;
+  }
+  .Hero2SectionMainBodyWrap {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Hero2SectionMainDesc p {
+    font-size: 20px;
+    color: white;
+  }
+  .Hero2SectionMainBodyWrap h1 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+}
