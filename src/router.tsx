@@ -236,15 +236,15 @@ const router = createBrowserRouter([
                 element: <AdminOverview/>
             },
             {
-                path: '/admin-dashboard1/alltransaction',
+                path: '/admin-dashboard/alltransaction',
                 element: <AdminTransactionHistory/>
             },
             {
-                path: '/admin-dashboard1/alluser',
+                path: '/admin-dashboard/alluser',
                 element: <AllUser/>
             },
             {
-                path: '/admin-dashboard1/manage-user/:id',
+                path: '/admin-dashboard/manage-user/:id',
                 element : <ManageUser/>
             },
             { path: '*', element: <NotFoundPage /> },
