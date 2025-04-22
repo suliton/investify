@@ -22,23 +22,12 @@ const Crypto = () => {
     const [selectedMethod, setSelectedMethod] = useState<PaymentMethod | null>(null);
     const [selectedPlan, setSelectedPlan] = useState<InvestmentPlan | null>(null);
 
-    const paymentMethods: PaymentMethod[] = [
-        {
-            name: 'BITCOIN',
-            img: '/bitcoin-btc-logo.png',
-            address: '15vwsQoZQ8VjfpHL3gsw3Zbr3k4KCHSGUg'
-        },
-        {
-            name: 'ETHERIUM',
-            img: '/ethereum-eth-logo.png',
-            address: '0x485c1576971481abfb8bd88342e5537144718008'
-        },
-        {
-            name: 'USDT',
-            img: '/usdt-logo.png',
-            address: '0x485c1576971481abfb8bd88342e5537144718008'
-        }
-    ];
+   const paymentMethods: PaymentMethod[] = [
+       { name: 'BITCOIN', img: '/bit.png', address: 'bc1q9h792w9e53tda85zzfr9qh8sdnu9q6zccptfj6' },
+       { name: 'DOGECOIN', img: '/dogecoin.jpeg', address: 'DKPVGJDTtorF5k98eAZyvxnTgp87zCmWic' },
+       { name: 'XRP', img: '/xrp.png', address: 'ru1q2W729V5xcZGwbAK2wD663EFjDr5bv' },
+       { name: 'SOLANA', img: '/sol.jpeg', address: 'EQzDFKH34W8w1fjSGCwhJeDYwhsSBfCYR3JXCThv1ovu' }
+     ];
 
     const plans: InvestmentPlan[] = [
         { name: 'BASIC', minAmount: 1000,maxAmount: 9999,percentage: '50' },

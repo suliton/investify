@@ -9,23 +9,28 @@ const GateWay = () => {
     const [bitcoinAddress, setBitcoinAddress] = useState('');
     const [ethereumAddress, setEthereumAddress] = useState('');
     const [usdtAddress, setUsdtAddress] = useState('');
+    const [solAddress, setSolAddress] = useState('');
 
     useEffect(() => {
         const savedBitcoinAddress = localStorage.getItem('bitcoinAddress');
         const savedEthereumAddress = localStorage.getItem('ethereumAddress');
         const savedUsdtAddress = localStorage.getItem('usdtAddress');
+        const savedSolAddress = localStorage.getItem('solAddress');
+        
 
         if (savedBitcoinAddress) setBitcoinAddress(savedBitcoinAddress);
         if (savedEthereumAddress) setEthereumAddress(savedEthereumAddress);
         if (savedUsdtAddress) setUsdtAddress(savedUsdtAddress);
+        if (savedSolAddress) setSolAddress(savedSolAddress);
     }, []);
+
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-
         localStorage.setItem('bitcoinAddress', bitcoinAddress);
         localStorage.setItem('ethereumAddress', ethereumAddress);
         localStorage.setItem('usdtAddress', usdtAddress);
+        localStorage.setItem('solAddress', solAddress);
 
         toast.success('Wallet address saved successfully ')
     };

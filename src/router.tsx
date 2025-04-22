@@ -42,14 +42,14 @@ import NotFoundPage from "./NotFound";
 
 const router = createBrowserRouter([
     {
-        path: '/1',
+        path: '/',
         element: (
             <Entry />
 
         ),
     },
     {
-        path: '/career1',
+        path: '/career',
         element: (
             <Layout>
                 <CareerSection />
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: '/company1',
+        path: '/company',
         element: (
             <Layout>
                 <Company />
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: '/contact1',
+        path: '/contact',
         element: (
             <Layout>
                 <Contact />
@@ -224,11 +224,11 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: '/admin-login1',
+        path: '/admin-login',
         element: <AdminLoginPage />
     },
     {
-        path: 'admin-dashboard1',
+        path: '/admin-dashboard',
         element: <AdminDashboard/>,
         children: [
             {
